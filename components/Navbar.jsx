@@ -8,7 +8,7 @@ import LoginModal from "./LoginModal";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const node = useRef();
   const handleClickOutside = (e) => {
     if (node.current.contains(e.target)) {
