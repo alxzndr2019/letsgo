@@ -10,7 +10,7 @@ const LoginModal = ({ onClose }) => {
       />
       <div className="flex flex-col items-center justify-center h-full">
         <h1 className="text-black text-4xl  italic font-black tracking-[-1.219px] m-4">
-          Let's Go !
+          Let&apos;s Go !
         </h1>
         <div className="flex flex-col gap-4 text-black">
           <input
@@ -28,7 +28,7 @@ const LoginModal = ({ onClose }) => {
           Login
         </button>
         <p className="text-black mt-5">
-          Don't have an account?{" "}
+          Don&apos;t Go ! have an account?{" "}
           <span className="text-[#2F3538] cursor-pointer">Login</span>
         </p>
       </div>

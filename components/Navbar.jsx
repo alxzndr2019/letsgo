@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className="flex  items-center text-white justify-between w-full mx-auto  p-5 fixed bg-[#212121] shadow-md z-50 ">
       <div>
         <h1 className="text-white text-4xl  italic font-black tracking-[-1.219px]">
-          Let's Go !
+          Let&apos;s Go !
         </h1>
       </div>
 
