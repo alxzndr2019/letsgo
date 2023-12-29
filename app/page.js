@@ -27,8 +27,8 @@ export default function Home() {
         </section>
         <NavSpace />
         <section>
-          <EventContainer />
-          <EventContainer />
+          <EventContainer type="HOTTEST" />
+          <EventContainer type="ONLINE" />
         </section>
       </main>
     </>

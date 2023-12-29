@@ -33,13 +33,16 @@ const Navbar = () => {
   return (
     <nav className="flex  items-center text-white justify-between w-full mx-auto  p-5 fixed bg-[#212121] shadow-md z-50 ">
       <div>
-        <h1 className="text-white text-4xl  italic font-black tracking-[-1.219px]">
+        <a
+          href="/"
+          className="text-white text-4xl  italic font-black tracking-[-1.219px]"
+        >
           Let&apos;s Go !
-        </h1>
+        </a>
       </div>
 
       <div className="hidden lg:block flex space-x-8">
-        <a href="#" className="text-white font-medium">
+        <a href="/explore" className="text-white font-medium">
           Find Event
         </a>
         <a href="#" className="text-white font-medium">
