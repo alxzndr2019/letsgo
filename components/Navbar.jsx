@@ -5,10 +5,14 @@ import GetStartedButton from "./Buttons/GetStartedButton";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import LoginModal from "./LoginModal";
+import CartModal from "./CartModal";
+import { FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   const node = useRef();
   const handleClickOutside = (e) => {
     if (node.current.contains(e.target)) {
@@ -41,7 +45,7 @@ const Navbar = () => {
         </a>
       </div>
 
-      <div className="hidden lg:block flex space-x-8">
+      <div className="hidden lg:block flex space-x-8 ">
         <a href="/explore" className="text-white font-medium">
           Find Event
         </a>
@@ -55,7 +59,15 @@ const Navbar = () => {
           Gift a Ticket
         </a>
       </div>
+
       <div className="flex hidden lg:block  space-x-8 items-center">
+        <a
+          href="#"
+          className="text-white font-medium "
+          onClick={() => setIsCartOpen(true)}
+        >
+          Cart
+        </a>
         <a
           href="#"
           className="text-white font-medium"
@@ -76,7 +88,7 @@ const Navbar = () => {
 
         {isOpen && (
           <div className=" absolute right-0 transform -translate-x-1/12 top-full bg-[#212121] flex flex-col gap-3 text-white p-5 round-xl shadow-lg">
-            <a href="#" className="text-white font-medium">
+            <a href="/explore" className="text-white font-medium">
               Find Event
             </a>
             <a href="#" className="text-white font-medium">
@@ -104,6 +116,14 @@ const Navbar = () => {
           <div className="fixed inset-0 backdrop-blur-md z-40"></div>
           <div className="fixed inset-0 flex items-center justify-center z-50">
             <LoginModal onClose={() => setIsModalOpen(false)} />
+          </div>
+        </>
+      )}
+      {isCartOpen && (
+        <>
+          <div className="fixed inset-0 backdrop-blur-md z-40"></div>
+          <div className="fixed inset-0 flex items-center justify-center z-50">
+            <CartModal onClose={() => setIsCartOpen(false)} />
           </div>
         </>
       )}

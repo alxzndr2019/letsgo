@@ -10,6 +10,7 @@ const EventContainer = ({ type }) => {
         {type === "ALL" && "All Events "}
         {type === "ONLINE" && "Online Events 🧑🏾‍💻"}
         {type === "HOTTEST" && "Hottest Events 🔥"}
+        {type === "SIMILAR" && "You might also like 👀"}
       </h1>
       {type === "ALL" && <EventFilter />}
 
