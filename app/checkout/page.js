@@ -1,8 +1,9 @@
 "use client";
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import NavSpace from "@/components/NavSpace";
-const page = () => {
+const CheckoutPage = () => {
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState(null);
   const tickets = [
     {
@@ -195,4 +196,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CheckoutPage;
