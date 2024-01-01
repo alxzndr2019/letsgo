@@ -3,7 +3,7 @@ import { IoCloseSharp } from "react-icons/io5";
 
 const LoginModal = ({ onClose }) => {
   return (
-    <div className="bg-white w-full lg:w-[594px] h-screen lg:h-[589px] rounded-3xl relative ">
+    <div className="bg-white shadow-lg w-full lg:w-[594px] h-screen lg:h-[589px] rounded-3xl relative ">
       <IoCloseSharp
         className="absolute top-5 right-5 text-2xl cursor-pointer text-black"
         onClick={onClose}

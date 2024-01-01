@@ -87,27 +87,43 @@ const Navbar = () => {
         </button>
 
         {isOpen && (
-          <div className=" absolute right-0 transform -translate-x-1/12 top-full bg-[#212121] flex flex-col gap-3 text-white p-5 round-xl shadow-lg">
-            <a href="/explore" className="text-white font-medium">
+          <div className="fixed top-0 right-0 bottom-0 left-0 bg-[#212121] flex flex-col gap-10 text-white p-5 round-xl shadow-lg ">
+            <IoCloseSharp
+              className="font-bold text-[30px]"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+            <a
+              href="/explore"
+              className="text-white text-2xl font-medium text-center"
+            >
               Find Event
             </a>
-            <a href="#" className="text-white font-medium">
+            <a href="#" className="text-white text-2xl font-medium text-center">
               Create Event
             </a>
-            <a href="#" className="text-white font-medium">
+            <a href="#" className="text-white text-2xl font-medium text-center">
               Groups
             </a>
-            <a href="#" className="text-white font-medium">
+            <a href="#" className="text-white text-2xl font-medium text-center">
               Gift a Ticket
             </a>
             <a
               href="#"
-              className="text-white font-medium"
+              className="text-white text-2xl font-medium text-center "
+              onClick={() => setIsCartOpen(true)}
+            >
+              Cart
+            </a>
+            <a
+              href="#"
+              className="text-white font-medium text-center text-2xl"
               onClick={() => setIsModalOpen(true)}
             >
               Login
             </a>
-            <GetStartedButton />
+            <a className="text-center">
+              <GetStartedButton />
+            </a>
           </div>
         )}
       </div>

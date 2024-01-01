@@ -9,6 +9,7 @@ const Explore = () => {
       {" "}
       <Navbar />
       <NavSpace />
+      <NavSpace />
       <section className="mx-auto">
         <EventContainer type="ALL" />
       </section>

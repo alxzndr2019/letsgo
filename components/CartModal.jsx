@@ -1,9 +1,17 @@
 import React from "react";
 import { IoCloseSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const cartItems = [
   {
     name: "Event 1",
+    description: "This is a description",
+    price: "£10",
+    image: "https://picsum.photos/200",
+    quantity: 2,
+  },
+  {
+    name: "Event 2",
     description: "This is a description",
     price: "£10",
     image: "https://picsum.photos/200",
@@ -30,11 +38,18 @@ const cartItems = [
     image: "https://picsum.photos/200",
     quantity: 2,
   },
+  {
+    name: "Event 4",
+    description: "This is a description",
+    price: "£10",
+    image: "https://picsum.photos/200",
+    quantity: 2,
+  },
 ];
 
 const CartModal = ({ onClose }) => {
   return (
-    <div className="bg-white w-full lg:w-[765px] h-screen lg:h-[516px] rounded-3xl relative ">
+    <div className="shadow-lg bg-white w-full lg:w-[765px] h-screen lg:h-[516px] rounded-3xl relative ">
       <IoCloseSharp
         className="text-black absolute top-5 right-5 text-2xl cursor-pointer lg:text-white"
         onClick={onClose}
@@ -74,9 +89,13 @@ const CartModal = ({ onClose }) => {
             <p className="font-tiny">Subtotal</p>
             <p className="font-bold">£40</p>
           </div>
-          <button className="bg-black w-[70%] mx-auto text-white px-4 py-2 rounded mt-4">
+
+          <a
+            href="/checkout"
+            className="bg-black w-[70%] mx-auto text-white px-4 py-2 rounded mt-4 block text-center"
+          >
             Checkout
-          </button>
+          </a>
         </div>
       </div>
     </div>

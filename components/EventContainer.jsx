@@ -5,8 +5,8 @@ import EventFilter from "./EventFilter";
 const EventContainer = ({ type }) => {
   const eventNumbers = [1, 2, 3, 5, 6, 7, 8];
   return (
-    <div className="w-full lg:w-[1000px] mx-auto text-white rounded-2xl ">
-      <h1 className="text-white text-4xl  italic font-black tracking-[-1.219px] my-4">
+    <div className="w-[350px] lg:w-[1000px] mx-auto text-white rounded-2xl ">
+      <h1 className="text-white text-2xl lg:text-4xl  italic font-black tracking-[-1.219px] my-4">
         {type === "ALL" && "All Events "}
         {type === "ONLINE" && "Online Events 🧑🏾‍💻"}
         {type === "HOTTEST" && "Hottest Events 🔥"}

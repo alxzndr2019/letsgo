@@ -22,7 +22,9 @@ const page = () => {
           />
         </div>
         <div className="w-[350px] mx-auto lg:w-[490px] h-[715px]  text-white">
-          <h1 className="text-4xl font-black">Wizkid Around the world</h1>
+          <h1 className="text-2xl lg:text-4xl font-black">
+            Wizkid Around the world
+          </h1>
           <p className="font-tiny mt-5">
             Integer pretium sodales maximus. Etiam vitae dui orci. Maecenas eget
             fermentum tortor. Fusce maximus tellus vitae eros interdum, nec
@@ -60,10 +62,10 @@ const page = () => {
               </select>
             </div>
           </div>
-          <div className="mt-5 flex justify-between items-center ">
+          <div className="mt-7 flex justify-between items-center ">
             <div className="flex gap-3 items-center">
-              <h className="text-3xl font-medium">Total</h>
-              <h1 className="text-4xl font-black">£40</h1>
+              <h className="text-xl lg:text-3xl font-medium">Total</h>
+              <h1 className="text-2xl lg:text-4xl font-black">£40</h1>
             </div>
             <button className="bg-white text-black px-10 py-3 rounded-md">
               Add To Cart
@@ -71,6 +73,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <NavSpace />
       <EventContainer type="SIMILAR" />
     </>
   );
