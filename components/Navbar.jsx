@@ -47,16 +47,16 @@ const Navbar = () => {
 
       <div className="hidden lg:block flex space-x-8 ">
         <a href="/explore" className="text-white font-medium">
-          Find Event
+          Expore Our events
         </a>
-        <a href="#" className="text-white font-medium">
-          Create Event
+        <a href="/explore" className="text-white font-medium">
+          Ticket your event
         </a>
-        <a href="#" className="text-white font-medium">
-          Groups
+        <a href="/explore" className="text-white font-medium">
+          Sell Tickets
         </a>
-        <a href="#" className="text-white font-medium">
-          Gift a Ticket
+        <a href="/explore" className="text-white font-medium">
+          Event Groups
         </a>
       </div>
 
@@ -92,20 +92,30 @@ const Navbar = () => {
               className="font-bold text-[30px]"
               onClick={() => setIsOpen(!isOpen)}
             />
+
             <a
               href="/explore"
-              className="text-white text-2xl font-medium text-center"
+              className="text-white font-medium text-2xl text-center"
             >
-              Find Event
+              Expore Our events
             </a>
-            <a href="#" className="text-white text-2xl font-medium text-center">
-              Create Event
+            <a
+              href="/explore"
+              className="text-white font-medium text-2xl text-center"
+            >
+              Ticket your event
             </a>
-            <a href="#" className="text-white text-2xl font-medium text-center">
-              Groups
+            <a
+              href="/explore"
+              className="text-white font-medium text-2xl text-center"
+            >
+              Sell Tickets
             </a>
-            <a href="#" className="text-white text-2xl font-medium text-center">
-              Gift a Ticket
+            <a
+              href="/explore"
+              className="text-white font-medium text-2xl text-center"
+            >
+              Event Groups
             </a>
             <a
               href="#"

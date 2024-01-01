@@ -69,7 +69,7 @@ const CheckoutPage = () => {
       <h1 className="text-xl lg:text-4xl font-black text-center m-5 italic">
         Lets Checkout
       </h1>
-      <div className="lg:w-[1000px] gap-4 flex flex-col lg:flex-row flex-col-reverse  justify-between mx-auto">
+      <div className="lg:w-[1000px] gap-4 flex  lg:flex-row flex-col-reverse  justify-between mx-auto">
         <div className="mx-auto w-[340px] lg:w-[490px] h-[715px] ">
           <h1 className="text-2xl mb-2">Billing Details</h1>
           <form>
