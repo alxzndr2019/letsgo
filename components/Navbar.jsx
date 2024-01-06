@@ -52,10 +52,10 @@ const Navbar = () => {
         <a href="/event-ticketing" className="text-white font-medium">
           Ticket your event
         </a>
-        <a href="/explore" className="text-white font-medium">
-          Sell Tickets
+        <a href="/sell" className="text-white font-medium">
+          Sell or Gift your tickets
         </a>
-        <a href="/explore" className="text-white font-medium">
+        <a href="/groups" className="text-white font-medium">
           Event Groups
         </a>
       </div>
@@ -106,13 +106,13 @@ const Navbar = () => {
               Ticket your event
             </a>
             <a
-              href="/explore"
+              href="/sell"
               className="text-white font-medium text-2xl text-center"
             >
-              Sell Tickets
+              Sell or Gift your tickets
             </a>
             <a
-              href="/explore"
+              href="/groups"
               className="text-white font-medium text-2xl text-center"
             >
               Event Groups
