@@ -23,7 +23,7 @@ const OnboardingList = () => {
     <div className="w-full h-auto text-black mt-5 bg-[#F7F7F7] rounded-lg flex flex-col p-6  shadow-lg">
       <h3 className="text-[24px] font-extrabold">Your Checklist</h3>
       <p className="font-light">
-        We make it easy to plan successful events. Here's how to start!
+        We make it easy to plan successful events. Here&apos;s how to start!
       </p>
       <ul>
         {checklist.map((item, index) => (
