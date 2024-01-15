@@ -7,17 +7,33 @@ import {
   FaCalendarAlt,
   FaTicketAlt,
   FaChartLine,
+  FaStar,
   FaCog,
   FaCommentDollar,
+  FaStarAndCrescent,
+  FaStarHalfAlt,
 } from "react-icons/fa";
+import "./style.css";
 
-const Sidebar = () => {
+const Sidebar = ({ setIsModalOpen, isModalOpen }) => {
   const pathname = usePathname();
   return (
     <div className="h-auto bg-opacity-20 bg-white backdrop-filter backdrop-blur-lg shadow-lg   text-white w-full sm:w-64 relative overflow-auto">
       <div className="p-6">
         <nav>
           <ul className=" text-[18px] space-y-[43px]">
+            <li
+              className={`mb-2 p-4 animated-background rounded-lg  hover:bg-gray-500 transition-colors duration-200`}
+            >
+              <button
+                onClick={() => setIsModalOpen(!isModalOpen)}
+                className=" text-[19px] flex items-center text-white "
+              >
+                <FaStarHalfAlt className="mr-5 text-3xl" />
+                Create Event
+              </button>
+            </li>
+            <hr />
             <li
               className={`mb-2 p-4 rounded-lg ${
                 pathname === "/dashboard" ? "bg-gray-500" : ""

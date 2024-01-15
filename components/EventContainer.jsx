@@ -11,13 +11,14 @@ const EventContainer = ({ type }) => {
         {type === "ONLINE" && "Online Events 🧑🏾‍💻"}
         {type === "HOTTEST" && "Hottest Events 🔥"}
         {type === "SIMILAR" && "You might also like 👀"}
+        {type === "MY_CREATED" && "Your Created Events 👀"}
       </h1>
       {type === "ALL" && <EventFilter />}
 
       <hr className="my-4" />
       <div className="flex flex-col md:grid md:grid-cols-3 gap-4 place-items-center">
         {eventNumbers.map((number, index) => (
-          <EventCard key={index} />
+          <EventCard type={type} key={index} />
         ))}
       </div>
     </div>

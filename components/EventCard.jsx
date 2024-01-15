@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { IoTicketSharp } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
-const EventCard = () => {
+const EventCard = ({ type }) => {
   return (
     <Link
       href="/event"
@@ -34,21 +34,26 @@ const EventCard = () => {
           <p className="text-black font-bold">
             Wonder Girls 2010 Wonder Girls World Tour San Francisco
           </p>
-          <p className="text-[#6A6A6A]">Hosted by : Pepsi</p>
-          <div className="text-black flex gap-5 ">
-            <div className="flex  items-center gap-1">
-              <span>
-                <FaCheckCircle />
-              </span>{" "}
-              143 going
-            </div>
-            <div className="flex  items-center gap-1">
-              <span>
-                <IoTicketSharp />
-              </span>{" "}
-              Free
-            </div>
-          </div>
+          {type !== "MY_CREATED" && (
+            <>
+              {" "}
+              <p className="text-[#6A6A6A]">Hosted by : Pepsi</p>
+              <div className="text-black flex gap-5 ">
+                <div className="flex  items-center gap-1">
+                  <span>
+                    <FaCheckCircle />
+                  </span>{" "}
+                  143 going
+                </div>
+                <div className="flex  items-center gap-1">
+                  <span>
+                    <IoTicketSharp />
+                  </span>{" "}
+                  Free
+                </div>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </Link>
